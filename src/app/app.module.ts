@@ -3,16 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { AddItemFormComponent } from './add-item-form/add-item-form.component';
+import { BudgetItemListComponent } from './budget-item-list/budget-item-list.component';
+import  { BudgetItemCardComponent } from "./budget-item-card/budget-item-card.component";
+
+
+import { FormsModule } from '@angular/forms';
+import { EditBudgetComponent } from './edit-budget/edit-budget.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainPageComponent,
+    AddItemFormComponent,
+    BudgetItemListComponent,
+    BudgetItemCardComponent,
+    EditBudgetComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, MatDialogModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [EditBudgetComponent]
 })
-export class AppModule { }
+export class AppModule {}

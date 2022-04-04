@@ -1,0 +1,27 @@
+<div class="budget-item-section">
+  <div class="budget-item-container">
+    <div class="income-coloumn">
+      <h1>Income</h1>
+      <div *ngFor="let budget of budgetItems">
+       <app-budget-item-card
+         (delete)="remove(budget)"
+         *ngIf="budget.amount >= 0"
+         (clickC)="onCardC(budget)"
+         [item]="budget">
+       </app-budget-item-card>
+      </div>
+    </div>
+    <div class="expense-coloumn">
+      <h1>Expenses</h1>
+      <div *ngFor="let budget of budgetItems">
+        <app-budget-item-card
+          (delete)="remove(budget)"
+          (clickC)="onCardC(budget)"
+          *ngIf="budget.amount < 0"
+          [item]="budget">
+
+        </app-budget-item-card>
+      </div>
+    </div>
+  </div>
+</div>

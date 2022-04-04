@@ -1,0 +1,66 @@
+@import "../../main-styles";
+
+.root {
+  display: flex;
+  width: 100%;
+  position: relative;
+  .x-icon-button {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    background: red;
+    right: 0;
+    top: -9px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    transform: scale(0);
+
+
+  }
+  &:hover {
+    .x-icon-button {
+      transform: scale(1);
+      opacity: 1;
+      transition: all ease-in-out 0.4s;
+    }
+  }
+  .budget-item {
+    display: flex;
+    width: 90%;
+    margin: 5px auto;
+    background-color: $ligh-grey;
+    padding: 10px;
+    cursor: pointer;
+
+    .description {
+      flex-grow: 1;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+    .amount {
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.expense {
+  p {
+    color: $red;
+  }
+  .amount {
+    background-color: $light-red;
+  }
+}
+.income {
+  p {
+    color: $green;
+  }
+  .amount {
+    background-color: $light-green;
+  }
+}
