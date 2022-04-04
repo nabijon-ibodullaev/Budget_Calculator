@@ -1,6 +1,6 @@
 # BudgetCalculator
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
-## Used Bulma and Angular Material
+## Used <a href="https://bulma.io/">Bulma</a> and <a href="https://material.angular.io/">Angular Material</a>
 
 <img src="1.png" />
 ## Development server
