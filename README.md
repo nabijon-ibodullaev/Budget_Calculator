@@ -1,4 +1,4 @@
-# BudgetCalculator
+ <h1 align="center" style="color: #ff6f61;"> BudgetCalculator </h1>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 ## Used <a href="https://bulma.io/">Bulma</a> and <a href="https://material.angular.io/">Angular Material</a>
 
